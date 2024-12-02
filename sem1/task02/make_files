@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for (( taskNum = 1; taskNum < $1+1; taskNum++ ))
+do
+    if [ $taskNum -lt 10 && -e task0$taskNum.c ]; then
+        touch task0$taskNum.c;
+    fi
+    if [ $taskNum -ge 10 && -e task$taskNum.c ]; then
+        touch task$taskNum.c;
+    fi
+done

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#if [ $1 = "-all" ]
+#then
+#    for(( taskNum = 1; taskNum < $2; taskNum++ ))
+#    do
+#        if [ -e task$taskNum.c ] then
+#            if [ $taskNum -lt 10 ] then
+#                if gcc -mfpmath=sse -fstack-protector-all -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wcast-qual -Wno-suggest-attribute=format task0$taskNum.c -o task0$taskNum.o 
+#                then
+#                    echo "Task $taskNum compiled successfully"
+#                fi
+#            elif gcc -mfpmath=sse -fstack-protector-all -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wcast-qual -Wno-suggest-attribute=format task$taskNum.c -o task$taskNum.o 
+#            then
+#                   echo "Task $taskNum compiled successfully"
+#           fi
+#        else
+#            echo "Task $taskNum doesn't exist"
+#        fi
+#    done
+#elif
+if gcc -mfpmath=sse -fstack-protector-all -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wcast-qual -Wno-suggest-attribute=format task$1.c -o task$1.o $2
+then
+            echo "Task $1 compiled successfully"
+fi

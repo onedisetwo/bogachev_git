@@ -1,0 +1,3 @@
+#!/bin/bash
+
+open examples/t$1e$2.txt

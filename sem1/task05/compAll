@@ -1,0 +1,9 @@
+#!/bin/bash
+echo Template: ./comp task.c print_bits.c a.out
+for(( i = 1; i <= 8; i++ ))
+do
+if ./comp task0$i.c print_bits.c -o a0$i.out
+then
+echo task0$i.c compiled successfully
+fi
+done

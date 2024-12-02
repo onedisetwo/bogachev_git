@@ -1,0 +1,12 @@
+#!/bin/bash
+touch task0{1..8}.c
+mkdir examples
+mkdir output
+touch examples/t0{1..8}e0{1..4}.txt
+#touch -c examples/t$2e01.txt
+#touch -c examples/t$2e02.txt
+#touch -c examples/t$2e03.txt
+#echo "// Set:     04" >> task{1..8}.c
+#echo "// Task:    " >> task{1..8}.c
+#echo "// Input:   " >> task{1..8}.c
+#echo "// Output:  " >> task{1..8}.c

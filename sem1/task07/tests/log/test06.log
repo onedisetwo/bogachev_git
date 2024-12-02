@@ -1,0 +1,48 @@
+
+================= Test 00: 1 0 empty.txt
+New array:
+
+../a06.out : Task = 6 Result = 0 Elapsed = 0.00
+=================
+
+================= Test 01: 3 14 07.txt
+NOT PROGRAM OUTPUT
+7 7 7 1 1 2 2 3 3 3 2 2 6 1 
+
+New array:
+1.000000e+00
+2.000000e+00
+3.000000e+00
+
+../a06.out : Task = 6 Result = 3 Elapsed = 0.00
+=================
+
+================= Test 02: 2 2 08.txt
+NOT PROGRAM OUTPUT
+4 4
+
+New array:
+4.000000e+00
+
+../a06.out : Task = 6 Result = 1 Elapsed = 0.00
+=================
+
+================= Test 03: 2 1 06.txt
+NOT PROGRAM OUTPUT
+-5
+
+New array:
+
+../a06.out : Task = 6 Result = 0 Elapsed = 0.00
+=================
+
+================= Test 04: 2 13 09.txt
+NOT PROGRAM OUTPUT
+1 1 1 6 1 1 1 7 7 -2 -2 0 0
+
+New array:
+-2.000000e+00
+0.000000e+00
+
+../a06.out : Task = 6 Result = 2 Elapsed = 0.00
+=================

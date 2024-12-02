@@ -1,0 +1,37 @@
+
+================= Test 00: 1 0 empty.txt
+New array:
+
+../a07.out : Task = 7 Result = 0 Elapsed = 0.00
+=================
+
+================= Test 01: 2 12 10.txt
+NOT PROGRAM OUTPUT
+1 2 3 1 7 1 0 -5 -2 -4 0 -1
+
+New array:
+7.000000e+00
+3.000000e+00
+
+../a07.out : Task = 7 Result = 2 Elapsed = 0.00
+=================
+
+================= Test 02: 9 9 11.txt
+NOT PROGRAM OUTPUT
+1e10 1e20 1e10 0 -1 0 -1 0 -1
+
+New array:
+1.000000e+20
+0.000000e+00
+
+../a07.out : Task = 7 Result = 2 Elapsed = 0.00
+=================
+
+================= Test 03: 2 1 06.txt
+NOT PROGRAM OUTPUT
+-5
+
+New array:
+
+../a07.out : Task = 7 Result = 0 Elapsed = 0.00
+=================

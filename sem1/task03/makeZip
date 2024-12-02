@@ -1,0 +1,3 @@
+#!/bin/bash
+
+zip -u Vakhrushev_NR.zip task*.c

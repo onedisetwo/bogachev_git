@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo
+echo =================	Test 00: $1 0 0 0 empty.txt 0 0 0 empty.txt
+../a02.out $1 0 0 0 empty.txt 0 0 0 empty.txt
+echo =================
+
+echo
+echo =================	Test 01: $1 10 20 0 a2.txt 6 6 0 b2.txt
+../a02.out $1 10 20 0 a2.txt 6 6 0 b2.txt
+echo =================
+
+echo
+echo =================	Test 02: $1 10 20 1 6 6 0 b2.txt
+../a02.out $1 10 20 1 6 6 0 b2.txt
+echo =================
+
+echo
+echo =================	Test 03: $1 10 20 0 a2.txt 6 6 3
+../a02.out $1 10 20 0 a2.txt 6 6 3
+echo =================
+
+echo
+echo =================	Test 04: $1 5 20 1 5 6 3
+../a02.out $1 5 20 1 5 6 3
+echo =================

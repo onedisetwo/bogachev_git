@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo
+echo =================	Test 00: 1 0 empty.txt
+../a$1.out 1 0 empty.txt
+echo =================
+
+echo
+echo =================	Test 01: 2 12 10.txt
+echo NOT PROGRAM OUTPUT
+cat 10.txt
+echo
+../a$1.out 2 12 10.txt
+echo =================
+
+echo
+echo =================	Test 02: 9 9 11.txt
+echo NOT PROGRAM OUTPUT
+cat 11.txt
+echo
+../a$1.out 9 9 11.txt
+echo =================
+
+echo
+echo =================	Test 03: 2 1 06.txt
+echo NOT PROGRAM OUTPUT
+cat 06.txt
+echo
+../a$1.out 2 1 06.txt
+echo =================
+
+
+

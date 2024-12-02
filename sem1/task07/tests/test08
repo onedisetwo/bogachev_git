@@ -1,0 +1,62 @@
+#!/bin/bash
+
+echo
+echo =================	Test 00: 1 0 empty.txt
+../a$1.out 1 0 empty.txt
+echo =================
+
+echo
+echo =================	Test 01: 12.txt 4 4 0 13.txt
+echo NOT PROGRAM OUTPUT
+cat 12.txt
+echo
+../a$1.out 12.txt 4 4 0 13.txt
+echo =================
+
+echo
+echo =================	Test 02: 15.txt 3 3 0 14.txt
+echo NOT PROGRAM OUTPUT
+cat 15.txt
+echo
+../a$1.out 15.txt 3 3 0 14.txt
+echo =================
+
+echo
+echo =================	Test 03: 16.txt 4 4 0 13.txt
+echo NOT PROGRAM OUTPUT
+cat 16.txt
+echo
+../a$1.out 16.txt 4 4 0 13.txt
+echo =================
+
+echo
+echo =================	Test 04: 17.txt 4 4 0 13.txt
+echo NOT PROGRAM OUTPUT
+cat 17.txt
+echo
+../a$1.out 17.txt 4 4 0 13.txt
+echo =================
+
+echo
+echo =================	Test 05: error1.txt 4 4 0 13.txt
+echo NOT PROGRAM OUTPUT
+cat error1.txt
+echo
+../a$1.out error1.txt 4 4 0 13.txt
+echo =================
+
+echo
+echo =================	Test 06: 12.txt 1 1 1
+echo NOT PROGRAM OUTPUT
+cat 12.txt
+echo
+../a$1.out 12.txt 1 1 1
+echo =================
+
+echo
+echo =================	Test 07: 12.txt 2 2 1
+echo NOT PROGRAM OUTPUT
+cat 12.txt
+echo
+../a$1.out 12.txt 2 2 1
+echo =================

@@ -1,0 +1,9 @@
+#!/bin/bash
+touch -c task$2.c
+#touch -c examples/t$2e01.txt
+#touch -c examples/t$2e02.txt
+#touch -c examples/t$2e03.txt
+echo "// Set:     $1" >> task$2.c
+echo "// Task:    $2" >> task$2.c
+echo "// Input:   " >> task$2.c
+echo "// Output:  " >> task$2.c

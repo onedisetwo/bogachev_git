@@ -1,0 +1,443 @@
+
+================= Test 00: 1 0 empty.txt
+Usage: ../a08.out [name B] n p s [name]
+=================
+
+================= Test 01: 12.txt 4 4 0 13.txt
+NOT PROGRAM OUTPUT
+1 1 1 1 2 1 1 2 1 1 1 2
+
+1.000000e+00
+1.000000e+00
+1.000000e+00
+2.000000e+00
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+
+1.000000:
+now != a[3]
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and 1.000000
+c = 3
+
+2.000000:
+now == a[3]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and a[3]
+2
+compare a[0] and a[2]
+compare a[1] and a[3]
+2
+compare a[0] and a[3]
+2
+c = 0
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+2.000000:
+now != a[2]
+compare a[0] and a[1]
+compare a[1] and 2.000000
+4
+compare a[0] and 2.000000
+4
+c = 0
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+
+2.000000:
+now == a[3]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and a[3]
+2
+compare a[0] and a[2]
+compare a[1] and a[3]
+2
+compare a[0] and a[3]
+2
+c = 0
+
+../a08.out : Task = 8 Result = 2 Elapsed = 0.00
+=================
+
+================= Test 02: 15.txt 3 3 0 14.txt
+NOT PROGRAM OUTPUT
+1 1 1 1 1 1
+
+1.000000e+00
+1.000000e+00
+1.000000e+00
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+c = 2
+
+1.000000:
+now == a[2]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+c = 2
+
+1.000000:
+now == a[2]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+c = 2
+
+1.000000:
+now == a[2]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+c = 2
+
+../a08.out : Task = 8 Result = 4 Elapsed = 0.00
+=================
+
+================= Test 03: 16.txt 4 4 0 13.txt
+NOT PROGRAM OUTPUT
+1 1 1 1 1 2 1 2 1 1 3 2
+
+1.000000e+00
+1.000000e+00
+1.000000e+00
+2.000000e+00
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+
+1.000000:
+now != a[3]
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and 1.000000
+c = 3
+
+1.000000:
+now != a[3]
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and 1.000000
+c = 3
+
+2.000000:
+now == a[3]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and a[3]
+2
+compare a[0] and a[2]
+compare a[1] and a[3]
+2
+compare a[0] and a[3]
+2
+c = 0
+
+1.000000:
+now == a[0]
+
+2.000000:
+now != a[1]
+compare a[0] and 2.000000
+4
+c = 0
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+3.000000:
+now != a[2]
+compare a[0] and a[1]
+compare a[1] and 3.000000
+4
+compare a[0] and 3.000000
+4
+c = 0
+
+2.000000:
+../a08.out : Task = 8 Result = 1 Elapsed = 0.00
+=================
+
+================= Test 04: 17.txt 4 4 0 13.txt
+NOT PROGRAM OUTPUT
+1 1 1 2 1 1 1 2 1 2 2 1 1 1 2
+
+1.000000e+00
+1.000000e+00
+1.000000e+00
+2.000000e+00
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+
+2.000000:
+now == a[3]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and a[3]
+2
+compare a[0] and a[2]
+compare a[1] and a[3]
+2
+compare a[0] and a[3]
+2
+c = 0
+
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+
+2.000000:
+now == a[3]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and a[3]
+2
+compare a[0] and a[2]
+compare a[1] and a[3]
+2
+compare a[0] and a[3]
+2
+c = 0
+
+1.000000:
+now == a[0]
+
+2.000000:
+now != a[1]
+compare a[0] and 2.000000
+4
+c = 0
+
+2.000000:
+1.000000:
+now == a[0]
+
+1.000000:
+now == a[1]
+
+1.000000:
+now == a[2]
+
+2.000000:
+now == a[3]
+c == n, ans++
+compare a[0] and a[1]
+compare a[1] and a[2]
+compare a[2] and a[3]
+2
+compare a[0] and a[2]
+compare a[1] and a[3]
+2
+compare a[0] and a[3]
+2
+c = 0
+
+../a08.out : Task = 8 Result = 3 Elapsed = 0.00
+=================
+
+================= Test 05: error1.txt 4 4 0 13.txt
+NOT PROGRAM OUTPUT
+1 2 3 fds
+
+1.000000e+00
+1.000000e+00
+1.000000e+00
+2.000000e+00
+
+1.000000:
+now == a[0]
+
+2.000000:
+now != a[1]
+compare a[0] and 2.000000
+4
+c = 0
+
+3.000000:
+Error: cannot read error1.txt
+=================
+
+================= Test 06: 12.txt 1 1 1
+NOT PROGRAM OUTPUT
+1 1 1 1 2 1 1 2 1 1 1 2
+
+1.000000e+00
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+2.000000:
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+2.000000:
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+1.000000:
+now == a[0]
+c == n, ans++
+c = 0
+
+2.000000:
+../a08.out : Task = 8 Result = 9 Elapsed = 0.00
+=================
+
+================= Test 07: 12.txt 2 2 1
+NOT PROGRAM OUTPUT
+1 1 1 1 2 1 1 2 1 1 1 2
+
+1.000000e+00
+2.000000e+00
+
+1.000000:
+now == a[0]
+
+1.000000:
+now != a[1]
+compare a[0] and 1.000000
+c = 1
+
+1.000000:
+now != a[1]
+compare a[0] and 1.000000
+c = 1
+
+1.000000:
+now != a[1]
+compare a[0] and 1.000000
+c = 1
+
+2.000000:
+now == a[1]
+c == n, ans++
+compare a[0] and a[1]
+2
+c = 0
+
+1.000000:
+now == a[0]
+
+1.000000:
+now != a[1]
+compare a[0] and 1.000000
+c = 1
+
+2.000000:
+now == a[1]
+c == n, ans++
+compare a[0] and a[1]
+2
+c = 0
+
+1.000000:
+now == a[0]
+
+1.000000:
+now != a[1]
+compare a[0] and 1.000000
+c = 1
+
+1.000000:
+now != a[1]
+compare a[0] and 1.000000
+c = 1
+
+2.000000:
+now == a[1]
+c == n, ans++
+compare a[0] and a[1]
+2
+c = 0
+
+../a08.out : Task = 8 Result = 3 Elapsed = 0.00
+=================

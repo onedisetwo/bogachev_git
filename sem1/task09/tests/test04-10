@@ -1,0 +1,52 @@
+#!/bin/bash
+
+echo
+echo =================	Test 01 - empty file: $2 0 0 0 empty.txt
+../a$1.out $2 0 0 0 empty.txt
+echo =================
+
+echo
+echo =================	Test 02 - usage error: $2 1 1 a6.txt
+../a$1.out $2 1 1 a6.txt
+echo =================
+
+echo
+echo =================	Test 03 - error_read: $2 4 4 0 error1.txt
+../a$1.out $2 4 4 0 error1.txt
+echo =================
+
+echo
+echo =================	Test 04: $2 10 10 0 a1.txt
+../a$1.out $2 10 10 0 a1.txt
+echo =================
+
+echo
+echo =================	Test 05: $2 10000 5 2
+../a$1.out $2 10000 5 2
+echo =================
+
+echo
+echo =================	Test 06: $2 10000 3 1
+../a$1.out $2 10000 5 1
+echo =================
+
+echo
+echo =================	Test 07: $2 2 2 0 a3.txt
+../a$1.out $2 2 2 0 a3.txt
+echo =================
+
+echo
+echo =================	Test 08: $2 1 1 0 a6.txt
+../a$1.out $2 1 1 0 a6.txt
+echo =================
+
+echo
+echo =================	Test 09: $2 2 2 4
+../a$1.out $2 2 2 4
+echo =================
+
+echo
+echo =================	Test 10: $2 5 1 0 const.txt
+../a$1.out $2 5 1 0 const.txt
+echo =================
+

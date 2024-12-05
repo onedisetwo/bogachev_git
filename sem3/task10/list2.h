@@ -97,7 +97,7 @@ class list2 {
 					last->set_prev(curr);
 					curr = last;
 			}
-			if(!feof(fp) && len < m){
+			if((!feof(fp) && len < m)/* || len < m*/){
 					//delete_list(*head);
 					return io_status::format;
 			}
@@ -123,7 +123,7 @@ class list2 {
 		int operator< (const list2& b) const {
 			if(head == nullptr)
 				return 1;
-			return ( head < b.head ? 1 : 0 );
+			return ( *head < *b.head );
 		}
 /*		void delete_node (list2_node* curr){
 			list2_node *tmp;

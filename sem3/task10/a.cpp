@@ -40,12 +40,14 @@ int main(int argc, char* argv[]){
 	// Reading of file and memory allocations
 	if(!(fp = fopen(filename, "r"))){
                 printf("%s\n", get_error_message(io_status::open));
+		delete a;
 		return 2;
 	}
 	ret = a->read(fp);
 	if(ret != io_status::success){
 		printf("%s\n", get_error_message(ret));
 		fclose(fp);
+		delete a;
 		return 2;
 	}
 	// fclose(fp);
@@ -75,6 +77,7 @@ int main(int argc, char* argv[]){
 	if(ret != io_status::success){
 		printf("%s\n", get_error_message(ret));
 		fclose(fp);
+		delete b;
 		return 2;
 	}
 	fclose(fp);
@@ -89,6 +92,7 @@ int main(int argc, char* argv[]){
 		printf ("%s : Task = %d M = %d Result = %d Elapsed = %.2f\n",
 			argv[0], task, m, res, t);
 	}
+	delete b;
 	return 0;
 }
 

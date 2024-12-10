@@ -20,6 +20,7 @@ int main(int argc, char* argv[]){
 	// Internal variables
 	io_status ret;
 	double t;
+	//double t_total = 0;
 	int res;
 	FILE *fp;
 	tree<student> *a;
@@ -43,14 +44,18 @@ int main(int argc, char* argv[]){
 		delete a;
 		return 2;
 	}
+	//t = clock();
 	ret = a->read(fp);
+	//t = (clock() - t) / CLOCKS_PER_SEC;
+	//t_total += t;
+	//printf("Student read: %.2f\n", t);
 	if(ret != io_status::success){
 		printf("%s\n", get_error_message(ret));
 		fclose(fp);
 		delete a;
 		return 2;
 	}
-	// fclose(fp);
+	fclose(fp);
 
 	// Solution and printing the result
 	printf("Input tree:\n");
@@ -59,21 +64,27 @@ int main(int argc, char* argv[]){
 		t = clock ();
 		res = a->tasks1_5 (task);
 		t = (clock() - t) / CLOCKS_PER_SEC;
+		//t_total += t;
 		printf ("%s : Task = %d M = %d Result = %d Elapsed = %.2f\n",
 			argv[0], task, m, res, t);
 	}
 	delete a;
+	//printf("Student total time: %.2f\n", t_total);*/
 
 // ===== TREE<LIST2>
 	b = new tree<list2>;
 	// Reading of file and memory allocations
-/*  	if(!(fp = fopen(filename, "r"))){
+	//rewind(fp);
+	if(!(fp = fopen(filename, "r"))){
                 printf("%s\n", get_error_message(io_status::open));
+		delete a;
 		return 2;
-	} */
-	rewind(fp);
-//	fp.fseek(start);
+	}
+	//t = clock();
 	ret = b->read(fp);
+	//t = (clock() - t) / CLOCKS_PER_SEC;
+	//t_total += t;
+	//printf("List read: %.2f\n", t);
 	if(ret != io_status::success){
 		printf("%s\n", get_error_message(ret));
 		fclose(fp);
@@ -89,10 +100,13 @@ int main(int argc, char* argv[]){
 		t = clock ();
 		res = b->tasks1_5 (task);
 		t = (clock() - t) / CLOCKS_PER_SEC;
+		//t_total += t;
 		printf ("%s : Task = %d M = %d Result = %d Elapsed = %.2f\n",
 			argv[0], task, m, res, t);
 	}
 	delete b;
+
+	//printf("Program total time: %.2f\n", t_total);
 	return 0;
 }
 

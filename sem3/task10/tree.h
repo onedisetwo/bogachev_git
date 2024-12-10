@@ -172,14 +172,17 @@ class tree {
 			return get_level_width(curr->left, level, curr_level + 1) +
 				get_level_width(curr->right, level, curr_level + 1);
 		}
-		int get_balance_total (tree_node<T> *curr) const {
-			int res, diff;
-			if(curr == nullptr)
+		int get_balance_total (tree_node<T> *curr, int *total = nullptr) const {
+			int dl, dr, tl = 0, tr = 0, diff;
+			if(curr == nullptr){
+				*total = 0;
 				return 0;
-			diff = abs(get_count_total(curr->left) - 
-				get_count_total(curr->right));
-			res = max(get_balance_total(curr->left), get_balance_total(curr->right));
-			return max(diff, res);
+			}
+			dl = get_balance_total(curr->left, &tl);
+			dr = get_balance_total(curr->right, &tr);
+			diff = abs(tl - tr);
+			*total = curr->get_length() + tl + tr;
+			return max(diff, max(dl, dr));
 		}
 		int get_count_1 (tree_node<T> *curr) const { // 7.5
 			int res = 0;
@@ -211,7 +214,8 @@ class tree {
 			return max_width;
 		}
 		int task4 () const {
-			return get_balance_total (root);
+			int total = 0;
+			return get_balance_total (root, &total);
 		}
 		int task5 () const {
 			return get_count_1 (root);

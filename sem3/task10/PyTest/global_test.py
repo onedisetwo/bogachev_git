@@ -301,7 +301,7 @@ step = 5
 max_length = 100
 attempts = [2, 3, 4, 5, 6]
 
-use_valgrind = False
+use_valgrind = True
 precision = max_length
 first_task = 0
 last_task = 0
